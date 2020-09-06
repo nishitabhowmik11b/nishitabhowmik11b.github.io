@@ -1,0 +1,170 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    color: rgb(0, 0, 0);
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("img/corona1.jpg");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("img/poly4.jpg");
+    min-height: 71vh;
+  }
+  
+  .bgimg-3 {
+    background-image: url("img/poly2.jpg");
+    min-height: 50vh;
+  }
+
+  .bgimg-4 {
+    background-image: url("img/poly3.jpg");
+    min-height: 47vh;
+  }
+
+  .bgimg-5 {
+    background-image: url("img/poly5.jpg");
+    min-height: 50vh;
+  }
+  
+  title1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13vh;
+    letter-spacing: 0.5vh;
+    font-family:"Times New Roman", Times, serif ;
+    color: #fff;
+  }
+  
+  title2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6.5vh;
+    letter-spacing: 0.5vh;
+    font-family:"Times New Roman", Times, serif ;
+    color: rgb(255, 255, 255);
+  }
+
+  title3 {
+    position: relative;
+    left: 10%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 6.5vh;
+    letter-spacing: 0.5vh;
+    font-family:"Times New Roman", Times, serif ;
+    color: rgb(255, 255, 255);
+
+  }  
+  
+  para1 {
+    position: absolute;
+    text-align: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vh;
+    font-family: "Palatino";
+    color: #fff;
+  }
+  
+  para2 {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 30%;
+    right: 30%;
+    font-size: 2.5vh;
+    line-height: 4vh;
+    font-family: "Palatino";
+    color: rgba(255, 255, 255, 0.856);
+  }
+
+  para3 {
+    position: relative;
+    text-align: center;
+    left: 10%;
+    font-size: 2.5vh;
+    line-height: 4vh;
+    font-family: "Palatino";
+    color: rgba(255, 255, 255, 0.856);
+  }
+  
+  note {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 10%;
+    right: 10%;
+    font-size: 2vh;
+    font-family: "Courier New";
+    color: rgb(189, 186, 186);
+  }
+  
+  button {
+    border: none;
+    color: black;
+    background-color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    font-family: "Palatino";
+    font-size: 2.5vh;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+.gallery {
+  position: absolute;
+  left:20%;
+  right: 20%;
+  top: 2%;
+  flex-grow: 1;
+  margin: auto;
+  width: 95vh;
+  height: 95vh;
+    
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 3vmin;
+  justify-items: center;
+  align-items: center;
+  }
+  
+IMG {
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -2%;
+  clip-path: square;
+  transform: scale(1);
+  transition: all .25s;
+  }
+    
+img:hover {
+  z-index: 2;
+  transform: scale(1.7);
+  }
+
+.column-left{ float: left; width: 32%; }
+.column-right{ float: right; width: 36%; }
+.column-center{ display: inline-block; width: 32%; }
+.column-left2{ float: left; width: 48%; }
+.column-right2{ float: right; width: 52%; }
